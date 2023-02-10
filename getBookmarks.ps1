@@ -8,7 +8,7 @@
 
     Process {
         $cred = Get-Credential
-        $fullName = $ComputerName + ".holzer.org"
+        $fullName = $ComputerName + ""
         $session = New-PSSession -ComputerName $ComputerName -Credential $cred
         [string]$path = "C:\Users\" + $userName + "\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
         $checkPath = Test-Path -Path $path
